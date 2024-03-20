@@ -43,7 +43,7 @@
             margin-top: 60px;
         }
 
-        .resetear-puntuacion-boton {
+        .resetear-puntuacion-boton, .auto-play-boton {
             background-color: white;
             border: none;
             font-size: 15px;
@@ -79,7 +79,20 @@
         updateScoreElement();
     " class="resetear-puntuacion-boton">Resetear puntuación</button> 
 
+    <button class="auto-play-boton" onclick="
+    autoPlay();
+    ">Auto Play</button>
+
     <script>
+
+        function autoPlay() {
+            setInterval(function(){
+                const movimientoJugador = pickComputerMove();
+                jugar(movimientoJugador);
+            }, 1000);
+          }
+
+
         let puntuacion  = JSON.parse(localStorage.getItem('puntuacion')) || {
             ganadas: 0,
             perdidas: 0,

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercise</title>
+</head>
+<body>
+    <h2>Añadir elementos al array</h2>
+    <input type="number" id="addElementCount" placeholder="Cantidad de elementos">
+    <button id="pushBtn">Push</button>
+    <button id="unshiftBtn">Unshift</button>
+    <button id="insertAtBtn">Insert At</button>
+
+    <h2>Eliminar elementos del array</h2>
+    <button id="popBtn">Pop</button>
+    <button id="shiftBtn">Shift</button>
+    <input type="number" id="removeAtIndex" placeholder="Índice del elemento a eliminar">
+    <button id="removeAtBtn">Remove At</button>
+
+    <h2>Contenido del array</h2>
+    <div id="arrayContent">[]</div>
+
+    <script src="./js/ejercicioArray.js"></script> <!-- Asegúrate de que la ruta al archivo JavaScript sea correcta -->
+    <script>
+        document.getElementById('pushBtn').addEventListener('click', () => {
+            const count = parseInt(document.getElementById('addElementCount').value);
+            addRandomEmoticons(count);
+        });
+
+        document.getElementById('unshiftBtn').addEventListener('click', () => {
+            const count = parseInt(document.getElementById('addElementCount').value);
+            unshiftRandomEmoticons(count);
+        });
+
+        document.getElementById('insertAtBtn').addEventListener('click', () => {
+            const count = parseInt(document.getElementById('addElementCount').value);
+            const index = parseInt(prompt('Introduce el índice de inserción:'));
+            const emoticon = prompt('Introduce el emoticono a insertar:');
+            insertEmoticonAt(emoticon, index);
+        });
+
+        document.getElementById('popBtn').addEventListener('click', () => {
+            removeEmoticonAt(array.length - 1);
+        });
+
+        document.getElementById('shiftBtn').addEventListener('click', shiftElement);
+
+        document.getElementById('removeAtBtn').addEventListener('click', () => {
+            const index = parseInt(document.getElementById('removeAtIndex').value);
+            removeEmoticonAt(index);
+        });
+
+        // Actualiza el contenido del array al cargar la página
+        updateArrayContent();
+    </script>
+</body>
+</html>

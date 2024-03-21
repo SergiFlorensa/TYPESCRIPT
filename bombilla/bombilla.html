@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombilla</title>
+    <style>
+        .contenedorPadre{
+            width: 100%;
+            height: auto;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        .button{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedorPadre">
+        <div id="contenedorBombilla">
+            <img id="bombillaCerrada" src="./off.jpg" alt="Bombilla apagada">
+        </div>
+        <div id="contenedorBotones">
+            <img id="boton-cerrado" class="button" src="./boff.jpg" alt="Botón Cerrar"  onclick="bombillaEncendida()">
+        </div>
+    </div>
+
+    <script src="./js/bombilla.js"></script>
+</body>
+</html>

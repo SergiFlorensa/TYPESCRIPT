@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bombilla</title>
     <style>
-        .contenedorPadre{
+        .contenedorPadre {
             width: 100%;
             height: auto;
             background-color: black;
@@ -13,23 +13,34 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-
+            flex-direction: column;
         }
-        .button{
+
+        .button {
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
+        #intensidadLuz {
+            width: 200px;
+        }
+
+        #bombilla {
+            opacity: 0; /* Empezamos con la bombilla apagada */
+            transition: opacity 0.3s ease; /* Agregamos transición para un cambio suave de opacidad */
+        }
     </style>
 </head>
 <body>
     <div class="contenedorPadre">
         <div id="contenedorBombilla">
-            <img id="bombillaCerrada" src="./off.jpg" alt="Bombilla apagada">
+            <img id="bombilla" src="./on.jpg" alt="Bombilla apagada">
         </div>
         <div id="contenedorBotones">
-            <img id="boton-cerrado" class="button" src="./boff.jpg" alt="Botón Cerrar"  onclick="bombillaEncendida()">
+            <img id="boton-cerrado" class="button" src="./boff.jpg" alt="Botón Cerrar" onclick="toggleBombilla()">
         </div>
     </div>
+    <input type="range" min="0" max="100" value="0" id="intensidadLuz" onchange="cambiarIntensidad()">
 
     <script src="./js/bombilla.js"></script>
 </body>

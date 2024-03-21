@@ -1,15 +1,27 @@
 "use strict";
-function bombillaEncendida() {
-    const imagenBombilla = document.getElementById('bombillaCerrada');
-    const botonCerrado = document.getElementById('boton-cerrado');
-    if (imagenBombilla && botonCerrado) {
-        if (imagenBombilla.src.includes(`off`)) {
-            imagenBombilla.src = `./on.jpg`;
-            botonCerrado.src = `./bon.jpg`;
+// bombilla.ts
+function toggleBombilla() {
+    const bombilla = document.getElementById('bombilla');
+    const boton = document.getElementById('boton-cerrado');
+    if (bombilla && boton) {
+        if (bombilla.style.opacity === '0') {
+            bombilla.style.opacity = '1';
+            boton.src = './bon.jpg';
         }
         else {
-            imagenBombilla.src = `./off.jpg`;
-            botonCerrado.src = `./boff.jpg`;
+            bombilla.style.opacity = '0';
+            boton.src = './boff.jpg';
+            document.getElementById('intensidadLuz').value = '0'; // Resetear la intensidad al apagar la bombilla
         }
+    }
+}
+function cambiarIntensidad() {
+    const slider = document.getElementById('intensidadLuz');
+    const bombilla = document.getElementById('bombilla');
+    if (bombilla && slider) {
+        const intensidad = parseFloat(slider.value);
+        const intensidadNormalizada = intensidad / 100; // Normalizar la intensidad de 0 a 1
+        // Ajustar la opacidad de la bombilla según la intensidad seleccionada
+        bombilla.style.opacity = intensidadNormalizada.toString();
     }
 }

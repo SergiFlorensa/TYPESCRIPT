@@ -1,0 +1,23 @@
+.recuadroVerde {
+    background-color: lightgreen;
+    width: 50%;
+    height: 50%;
+}
+
+.recuadroAmarillo {
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+}
+
+.recuadroRojo {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+
+.recuadroAzul {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+}
+
+.contenedorColores {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+
+}
+#verde{
+    background-color: lightgreen;
+    grid-row: 1;
+    grid-column: 1;
+    padding: 10px;
+    justify-content: flex-start;
+    flex-direction: row;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+#amarillo{
+    background-color: rgb(241, 241, 121);
+    grid-row: 1;
+    grid-column: 2;
+    padding: 10px;
+    flex-direction: row;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    
+}
+#rojo{
+    background-color: rgb(212, 72, 54);
+    grid-row: 2;
+    grid-column: 1;
+    padding: 10px;
+    justify-content: flex-start;
+    display:flex;
+    align-items: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+#azul{
+    background-color: rgb(59, 150, 215);
+    grid-row: 2;
+    grid-column: 2;
+    padding: 10px;
+    flex-direction: row;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: calc(100% - 20px); /* Limitar el ancho */
+    max-height: calc(100% - 20px); /* Limitar la altura */
+
+}
+.bolasVerde{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+    position: relative;
+}
+.bolasAmarillo{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: -45px;
+}
+.bolasRojo{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.bolasAzul{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 230px;
+    margin-right: -45px;
+}
+
+.botonblanco1{
+    background-image: url(./1f955.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco2{
+    background-image: url(./1f36c.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco3{
+    background-image: url(./1f366.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco4{
+    background-image: url(./1f3ae.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco5{
+    background-image: url(./42_85274.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco6{
+    background-image: url(./e47539fabaec6a696ef979f2348bfd97-pieza-de-ajedrez-de-caballero-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+
+}
+.botonblanco7{
+    background-image: url(./puño.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+}
+.botonblanco8{
+    background-image: url(./run.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+}
+.botonblanco9{
+    background-image: url(./sleep.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+}
+.botonblanco10{
+    background-image: url(./cloud-with-moon-and-stars-emoji-icon-cloudy-night-weather-symbol-illustration-vector-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-right: 50px; 
+}
+
+
+.eat{
+    color: rgb(0, 94, 27);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-left: -250px;
+    
+}
+.play{
+    color: rgba(198, 142, 1, 0.557);
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 150px;
+    
+}
+.fight {
+    color: rgb(127, 3, 3);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -247px;
+    margin-bottom: 230px;
+}
+.sleep {
+color: blue;
+font-size: 30px;
+font-weight: bold;
+left: 150px;
+margin-top: -200px;
+display: flex;
+position: relative;
+
+   
+}
+.barraVidaSuperiorVerde{
+    background-color: black;
+    width: 30vw;
+    height: 2vh;
+    border-radius: 70px;
+    margin-top: 60px;
+    margin-left: -300px;
+    position: relative;
+}
+.nivelComidaTotal{
+    background-color: green;
+    width: auto;
+    height: 2vh;
+    border-radius: 70px;
+
+}
+.nivelComidaTotal.barraRoja {
+            background-color: red; /* Cambiar a rojo si está por debajo del 50% */
+        }
+
+.barraVidaSuperiorAmarilla{
+    background-color: black;
+    width: 28vw;
+    height: 2vh;
+    border-radius: 70px;
+    margin-top: -70px;
+    margin-left: 300px;
+    position: relative;
+}
+.barraVidaInferiorRoja{
+    background-color: black;
+    width: 29vw;
+    height: 2vh;
+    border-radius: 70px;
+    margin-left: -200px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.barraVidaInferiorAzul{
+    background-color: black;
+    width: 29vw;
+    height: 2vh;
+    border-radius: 70px;
+    margin-left: 300px;
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.torracat{
+    width: 15vw;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.nombreTorracat{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    align-items: center;
+    text-align: center;
+    top: 33%;
+    left: 47%;
+}
+.barraTorracat{
+    background-color: rgb(0, 0, 0);
+    width: 20vw;
+    height: 2vh;
+    border-radius: 70px;
+    position: absolute;
+    top: 65%;
+    left: 39%;
+}
+.nivelVidaTorracat{
+    background-color: green;
+    border-radius: 70px;
+    width: 29vw;
+    height: 2vh;
+}
+.barraTorracat.barraRoja {
+            background-color: red; /* Cambiar a rojo si está por debajo del 50% */
+        }
+
+.nivelComida{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 80px;
+    margin-left: -140px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.nivelJuego{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -130px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.nivelLucha{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -130px;
+    margin-left: -180px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.nivelSueño{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: -70px;
+    margin-right: 250px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="contenedorColores" id="padre">
+
+        <div class="nombreTorracat">Torracat</div>
+        <div class="barraTorracat">
+            <div class="nivelVidaTorracat"></div>
+        </div>
+        <img src="./pokemon_torracat-removebg-preview.png" alt="pokemon" class="torracat">
+
+            <div class="recuadroVerde" id="verde">
+                <div class="bolasVerde">
+                    <button onclick="comer()" class="botonblanco1"><div class="bolaBlanca1"></div></button>
+                    <button onclick="comer()" class="botonblanco2"><div class="bolaBlanca2"></div></button>
+                    <button onclick="comer()" class="botonblanco3"><div class="bolaBlanca3"></div></button>
+                </div>
+            <div class="barraVidaSuperiorVerde">
+                <div class="nivelComidaTotal"></div>
+           </div>
+                <div class="eat">EAT</div>
+
+                <div class="nivelComida">% FULL</div>
+            </div>
+
+
+
+
+            <div class="recuadroAmarillo" id="amarillo">
+                <div class="bolasAmarillo">
+                    <button onclick="jugar" class="botonblanco4"><div class="bolaBlanca4"></div></button>
+                    <button  onclick="jugar" class="botonblanco5"><div class="bolaBlanca5"></div></button>
+                    <button  onclick="jugar" class="botonblanco6"><div class="bolaBlanca6"></div></button>
+                </div>
+                <div class="barraVidaSuperiorAmarilla">
+                </div>
+                <div class="play">PLAY</div>
+                <div class="nivelJuego">% FUN</div>
+
+            </div>
+
+
+
+
+
+            <div class="recuadroRojo" id="rojo">
+                <div class="bolasRojo">
+                   <button onclick="luchar" class="botonblanco7"> <div class="bolaBlanca7"></div></button>
+                    <button onclick="luchar" class="botonblanco8"><div class="bolaBlanca8"></div></button>
+                </div>
+                <div class="barraVidaInferiorRoja">
+                </div>
+                <div class="fight">FIGHT</div>
+                <div class="nivelLucha">% STRENGTH</div>
+
+            </div>
+
+
+
+
+            <div class="recuadroAzul" id="azul">
+                <div class="bolasAzul">
+                    <button onclick="dormir" class="botonblanco9"> <div class="bolaBlanca9"></div></button>
+                    <button onclick="dormir" class="botonblanco10"><div class="bolaBlanca10"></div></button>
+                </div>
+                <div class="barraVidaInferiorAzul"></div>
+                <div class="sleep">SLEEP</div> <!-- Aquí movemos el texto dentro del div -->
+                <div class="nivelSueño">% ENERGY</div>
+            </div>
+            
+
+            
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/tamagochi.js"></script>
+    
+
+
+</body>
+</html>

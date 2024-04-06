@@ -1,0 +1,33 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+
+@media (min-width: 400px) {
+    .container-fluid {
+        background-color: rgb(171, 37, 37);
+
+
+    }
+    
+
+ @media (min-width: 768px) {
+    .container-fluid {
+        background-color: rgb(171, 37, 37);
+
+
+    }
+
+
+@media (min-width: 992px) {
+    .container-fluid {
+        background-color: rgb(171, 37, 37);
+
+
+    }
+    .header-btns .btn {
+        margin-right: 10px;
+        
+    }
+}}}

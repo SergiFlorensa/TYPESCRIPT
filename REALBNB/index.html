@@ -7,19 +7,212 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class=>
-  <header class="container-fluid header-spacing header-shadow">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <img src="./images/simbolo.png" alt="Logo" class="me-3" width="100" height="100">
-      </div>
-      <div class="d-flex align-items-center">
-        <input type="text" class="form-control me-2" placeholder="Search">
-        <button class="btn btn-primary me-2" type="button">Search</button>
-      </div>
-      <button type="button" class="btn btn-link text-white" id="loginBtn">Login</button>
-    </div>
-  </header>
+  <header class="container-fluid header-spacing header-shadow sticky-top custom-header">
+    <div class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
 
+        <!-- Navbar brand (Logo) -->
+        <a class="navbar-brand pe-sm-3" href="index.html">
+          <span class="text-primary flex-shrink-0 me-2">
+            <img src="./images/gogo.png" class="img-fluid" style="max-width: 100px; height: auto;">
+            <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
+            </svg>
+          </span>
+          
+        </a>
+
+       
+
+        <!-- Mobile menu toggler (Hamburger) -->
+        <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar collapse (Main navigation) -->
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Destinos</a>
+              <div class="dropdown-menu overflow-hidden p-0">
+                <div class="d-lg-flex">
+                  <div class="mega-dropdown-column pt-1 pt-lg-3 pb-lg-4">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a class="dropdown-item" href="index.html">ÁFRICA</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 rounded-3 rounded-start-0" style="background-image: url(assets/img/megamenu/landings.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-mobile-app-showcase.html">AMÉRICA LATINA Y CUBA</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/mobile-app.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-product.html">ASIA ORIENTAL</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/product-landing.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-saas-v1.html">AUSTRALIA Y PACÍFICO</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-1.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-saas-v2.html">ESCANDINAVIA Y BÁLTICOS</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-2.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-saas-v3.html">EUROPA</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-3.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-saas-v4.html">
+                          ÍNDICO                         
+                        </a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-4.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-shop-v1.html">ASIA INDOCHINA</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/shop-homepage-1.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-shop-v2.html">
+                          LAPONIA
+                        </a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/shop-homepage-2.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-shop-v2.html">
+                          ORIENTE MEDIO Y NORTE ÁFRICA</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/marketing-agency.jpg);"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column pb-2 pt-lg-3 pb-lg-4">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a class="dropdown-item" href="landing-creative-agency.html">ASIA SUBCONTINENTE IDNIO</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/creative-agency.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-conference.html">ASIA SUDESTE ASIÁTICO</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/conference.jpg);"></span>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="landing-web-studio.html">USA, CANADÁ Y CARIBE</a>
+                        <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/web-studio.jpg);"></span>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column position-relative border-start z-3"></div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Tipos de Viaje</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">SAFARI</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="portfolio-list-v1.html">List View v.1</a></li>
+                    <li><a class="dropdown-item" href="portfolio-list-v2.html">List View v.2</a></li>
+                    <li><a class="dropdown-item" href="portfolio-grid-v1.html">Grid View v.1</a></li>
+                    <li><a class="dropdown-item" href="portfolio-grid-v2.html">Grid View v.2</a></li>
+                    <li><a class="dropdown-item" href="portfolio-slider.html">Slider View</a></li>
+                    <li><a class="dropdown-item" href="portfolio-single-v1.html">Single Project v.1</a></li>
+                    <li><a class="dropdown-item" href="portfolio-single-v2.html">Single Project v.2</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PLAYAS EXOTICAS</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="shop-catalog.html">Catalog (Listing)</a></li>
+                    <li><a class="dropdown-item" href="shop-single.html">Product Page</a></li>
+                    <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PARQUES NATURALES</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="blog-grid-sidebar.html">Grid View with Sidebar</a></li>
+                    <li><a class="dropdown-item" href="blog-grid.html">Grid View no Sidebar</a></li>
+                    <li><a class="dropdown-item" href="blog-list-sidebar.html">List View with Sidebar</a></li>
+                    <li><a class="dropdown-item" href="blog-list.html">List View no Sidebar</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v1.html">Single post v.1</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v2.html">Single post v.2</a></li>
+                    <li><a class="dropdown-item" href="blog-single-v3.html">Single post v.3</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">CRUCEROS FLUVIALES</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about-agency.html">About - Agency</a></li>
+                    <li><a class="dropdown-item" href="about-product.html">About - Product</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">VIAJAR CON NIÑOS</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services-v1.html">Services v.1</a></li>
+                    <li><a class="dropdown-item" href="services-v2.html">Services v.2</a></li>
+                    <li><a class="dropdown-item" href="services-v3.html">Services v.3</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="pricing.html">PRIVADOS</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">VUELTA AL MUNDO</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contacts-v1.html">Contacts v.1</a></li>
+                    <li><a class="dropdown-item" href="contacts-v2.html">Contacts v.2</a></li>
+                    <li><a class="dropdown-item" href="contacts-v3.html">Contacts v.3</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">FIORDOS</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="coming-soon-v1.html">Coming Soon v.1</a></li>
+                    <li><a class="dropdown-item" href="coming-soon-v2.html">Coming Soon v.2</a></li>
+                    <li><a class="dropdown-item" href="404-v1.html">404 Error v.1</a></li>
+                    <li><a class="dropdown-item" href="404-v2.html">404 Error v.2</a></li>
+                    <li><a class="dropdown-item" href="404-v3.html">404 Error v.3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Cuenta</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Auth pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="account-signin.html">Sign In</a></li>
+                    <li><a class="dropdown-item" href="account-signup.html">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="account-signinup.html">Sign In / Up</a></li>
+                    <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="account-overview.html">Overview</a></li>
+                <li><a class="dropdown-item" href="account-settings.html">Settings</a></li>
+                <li><a class="dropdown-item" href="account-billing.html">Billing</a></li>
+                <li><a class="dropdown-item" href="account-orders.html">Orders</a></li>
+                <li><a class="dropdown-item" href="account-earnings.html">Earnings</a></li>
+                <li><a class="dropdown-item" href="account-chat.html">Chat (Messages)</a></li>
+                <li><a class="dropdown-item" href="account-favorites.html">Favorites (Wishlist)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="components/typography.html">Regalar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="docs/getting-started.html">Catálogos</a>
+            </li>
+          </ul>
+          <div class="d-sm-none p-3 mt-n3">
+            <a class="btn btn-primary w-100 mb-1" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
+              <i class="ai-cart fs-xl me-2 ms-n1"></i>
+              Buy now
+            </a>
+          </div>
+        </nav>
+    </nav>
+  </header>
 
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -30,32 +223,29 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item">
-        <img src="./images/beach.jpg" class="d-block w-100" alt="Slide 1">
+        <img src="./images/train-4362166_1920.jpg" class="d-block w-100" alt="Slide 1">
         <div class="container">
           <div class="carousel-caption text-center">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Volver Arriba</a></p>
+            <h1></h1>
+            <p class="opacity-75">"Explora nuevos horizontes y descubre destinos inolvidables con nosotros."</p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./images/pagoda.jpg" class="d-block w-100" alt="Slide 2">
+        <img src="./images/hotel-1831072_1920.jpg" class="d-block w-100" alt="Slide 2">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Volver Arriba</a></p>
+            <h1></h1>
+            <p class="opacity-75">"Viaja a los lugares más fascinantes del mundo y vive experiencias únicas."</p>
           </div>
         </div>
       </div>
       <div class="carousel-item active">
-        <img src="./images/palace.jpg" class="d-block w-100" alt="Slide 3">
+        <img src="./images/river-4873198_1920.jpg" class="d-block w-100" alt="Slide 3">
         <div class="container">
           <div class="carousel-caption text-center">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Volver Arriba</a></p>
+            <h1></h1>
+            <p class="opacity-75">"Encuentra tu próxima aventura y deja que cada destino te sorprenda."</p>
           </div>
         </div>
       </div>
@@ -70,7 +260,6 @@
     </button>
   </div>
   
-
 
 
   <div id="loginModal" class="modal" tabindex="-1">
@@ -113,22 +302,22 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4 text-center"> <!-- Agregada la clase text-center -->
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img src="./images/246952-P3U5QH-603.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Placeholder">
+        <h2 class="fw-normal">Exploracion</h2>
+        <p>Descubre nuevos horizontes.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center"> <!-- Agregada la clase text-center -->
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img src="./images/945204.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Placeholder">
+        <h2 class="fw-normal">Descubrimiento</h2>
+        <p>Vive experiencias únicas.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles»</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center"> <!-- Agregada la clase text-center -->
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        <img src="./images/55316.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Placeholder">
+        <h2 class="fw-normal">Aventura</h2>
+        <p>Encuentra la magia del mundo.</p>
+        <p><a class="btn btn-secondary" href="#">Ver detalles »</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -138,8 +327,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 text-center"> <!-- Agregada la clase text-center -->
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">NO LO IMAGINES MÁS, DESCUBRE AQUÍ TU PRÓXIMO VIAJE. </h2>
+        <p class="lead">"Deja de soñar despierto y haz realidad tus aventuras; encuentra aquí tu próximo viaje y déjate llevar por la emoción de descubrir nuevos horizontes."</p>
       </div>
       <div class="col-md-5">
         <!-- Contenido de la featurette sin modificar -->
@@ -150,8 +339,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2 text-center"> <!-- Agregada la clase text-center -->
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">DESCUBRE VIAJES QUE ILUSIONAN Y EMOCIONAN.</h2>
+        <p class="lead">"Embárcate en un viaje donde cada destino te sorprenda, ilusione y emocione, creando recuerdos que perdurarán para siempre."</p>
       </div>
       <div class="col-md-5 order-md-1">
         <!-- Contenido de la featurette sin modificar -->
@@ -162,8 +351,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 text-center"> <!-- Agregada la clase text-center -->
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">EXPLORA EL MUNDO: DESTINOS QUE INSPIRAN, EXPERIENCIAS QUE TRANSFORMAN</h2>
+        <p class="lead">"Fomentamos tu espíritu aventurero con destinos que despiertan tus sentidos y enriquecen tu alma. Descubre nuevas experiencias y amplía tus horizontes con nosotros."</p>
       </div>
       <div class="col-md-5">
         <!-- Contenido de la featurette sin modificar -->
@@ -177,6 +366,86 @@
 </div>
 
 
+
+
+
+<section class="container-fluid py-5 my-lg-3 my-xl-4 my-xxl-5 bg-light">
+  <div class="text-center pb-3 pt-sm-3 pt-md-4 mx-auto mt-xxl-1 mb-3 mb-lg-4" style="max-width: 525px;">
+    <h2 class="h1">Viajes destacados</h2>
+    <p class="mb-0">Sumérgete en aventuras inolvidables, descubre culturas fascinantes y crea recuerdos para toda la vida. Ya sea que busques relajarte en playas paradisíacas, explorar antiguas ciudades o disfrutar de emocionantes actividades al aire libre, nuestros viajes destacados tienen algo para todos. </p>
+  </div>
+
+  <!-- Gallery grid -->
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <a class="d-block gallery-item card card-hover zoom-effect" href="assets/img/landing/coworking-space/gallery/01.jpg" data-lg-id="dce88471-3cbf-49fd-aab3-a5c6b8cd0088">
+        <div class="position-relative">
+          <img class="card-img-top zoom-effect-img rounded-5" src="./images/beach-4392979_1920.jpg" alt="Open space">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 rounded-5 bg-dark opacity-0"></div>
+          <div class="overlay-content d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
+            <i class="ai-zoom-in fs-2 text-white"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <a class="d-block gallery-item card card-hover zoom-effect" href="assets/img/landing/coworking-space/gallery/02.jpg" data-lg-id="725cec88-22ab-42d4-a4ea-0a9e534a5aac">
+        <div class="position-relative">
+          <img class="card-img-top zoom-effect-img rounded-5" src="./images/asia-1782429_1920.jpg" alt="Kitchen">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 rounded-5 bg-dark opacity-0"></div>
+          <div class="overlay-content d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
+            <i class="ai-zoom-in fs-2 text-white"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-6 col-lg-4 mb-4">
+      <a class="d-block gallery-item card card-hover zoom-effect" href="assets/img/landing/coworking-space/gallery/03.jpg" data-lg-id="71c8a94c-5d6b-4cac-8e74-496a8631ae06">
+        <div class="position-relative">
+          <img class="card-img-top zoom-effect-img rounded-5" src="./images/city-3325314_1920.jpg" alt="Lounge zone">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 rounded-5 bg-dark opacity-0"></div>
+          <div class="overlay-content d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
+            <i class="ai-zoom-in fs-2 text-white"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <a class="d-block gallery-item card card-hover zoom-effect" href="assets/img/landing/coworking-space/gallery/04.jpg" data-lg-id="0d04e122-f31c-46ca-abfc-46c213f4dc8e">
+        <div class="position-relative">
+          <img class="card-img-top zoom-effect-img rounded-5" src="./images/channel-3547224_1920.jpg" alt="Open space">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 rounded-5 bg-dark opacity-0"></div>
+          <div class="overlay-content d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
+            <i class="ai-zoom-in fs-2 text-white"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <a class="d-block gallery-item card card-hover zoom-effect" href="assets/img/landing/coworking-space/gallery/05.jpg" data-lg-id="3652a37c-a7fc-48a8-a785-ec8b5968614f">
+        <div class="position-relative">
+          <img class="card-img-top zoom-effect-img rounded-5" src="./images/maupiti-5093261_1920.jpg" alt="Cafe">
+          <div class="overlay position-absolute top-0 start-0 w-100 h-100 rounded-5 bg-dark opacity-0"></div>
+          <div class="overlay-content d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
+            <i class="ai-zoom-in fs-2 text-white"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
   <div class="container pt-5">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col">
@@ -184,8 +453,8 @@
           <div class="card" style="width: 18rem;">
             <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Santorini es una de las islas Cícladas en el mar Egeo. Fue devastada por una erupción volcánica en el siglo XVI a. C., que dio forma a su paisaje accidentado. </p>
+              <h5 class="card-title">Santorini</h5>
+              <p class="card-text">Hacer un viaje a Grecia es una experiencia mágica e increíble que no debes perderte. Las razones para visitar este país del sur europeo son muchas. Historia, cultura, arqueología, naturaleza, playas… ¡Muchas son las opciones en un viaje a Grecia! A continuación, te mencionamos los principales motivos para descubrir Grecia. </p>
               <a href="#" class="btn btn-primary">Ver Sitio</a>
             </div>
           </div>
@@ -195,10 +464,10 @@
       <div class="col">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="card" style="width: 18rem;">
-            <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
+            <img src="./images/ireland.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Irlanda</h5>
+              <p class="card-text">Irlanda es un país pequeño y encantador con castillos medievales, emblemáticos monasterios y milenarias abadías, todos ellos hablan de los nobles vestigios de la antigua Irlanda. Los misteriosos lagos de este país con sus cristalinas aguas arropadas por el verdor de sus montes, valles y el gris del cielo ofrecen un paisaje sin igual.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -208,10 +477,10 @@
       <div class="col">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="card" style="width: 18rem;">
-            <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
+            <img src="./images/torres-del-paine-4827345_1920.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Patagonia, Argentina al completo.</h5>
+              <p class="card-text">Cascadas imponentes, bosques frondosos, glaciares, lagos, elefantes, leones marinos y un sinfín de maravillas naturales te esperan en el viaje organizado a Argentina que te presentamos a continuación. Y es que, gracias a este circuito, contemplarás el sensacional.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -222,10 +491,10 @@
       <div class="col">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="card" style="width: 18rem;">
-            <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
+            <img src="./images/pexels-quang-nguyen-vinh-2161449.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Tailandia</h5>
+              <p class="card-text">Viajar a Tailandia es siempre un acierto. Y es que este país del sudeste asiático posee un interesante patrimonio cultural e histórico, además de modernas infraestructuras y espectaculares rascacielos. Y es que en este circuito organizado que hemos preparado.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -235,10 +504,10 @@
       <div class="col">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="card" style="width: 18rem;">
-            <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
+            <img src="./images/river-5572289_1920.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Japón</h5>
+              <p class="card-text">En este viaje descubriremos el Japón más moderno en las ciudades de Tokio y Osaka, en contraste con las zonas feudales de Takayama y pueblos de Tsumago y Magome. Además, efectuaremos una visita a las casas granjas de Shirakawago, únicas en el mundo.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -248,10 +517,10 @@
       <div class="col">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="card" style="width: 18rem;">
-            <img src="./images/santorini-sky.jpg" class="card-img-top" alt="...">
+            <img src="./images/giraffes-7238815_1920.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Villa Santorini</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Kenia</h5>
+              <p class="card-text">Elefantes, leones, leopardos, jirafas, hienas, ñus, cebras, antílopes... ¿te atreves a rodearte de animales salvajes en África? Si eres un amante de la naturaleza africana o aventurero, estás de suerte ya que, con el circuito organizado en Kenia que te ofrecemos.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -262,6 +531,62 @@
       <!-- Repite este bloque de columna para los demás cards -->
     </div>
   </div>
+
+
+  <section class="container pt-5">
+    <div class="bg-dark position-relative rounded-5 overflow-hidden px-4 pt-1 pb-2 py-sm-4 py-lg-5">
+      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .03);"></div>
+      <div class="position-absolute top-0 end-0 pe-5 z-2">
+        <svg class="me-5" width="514" height="254" viewBox="0 0 514 254" fill="white" fill-opacity=".03" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="257" cy="0.5" rx="257" ry="253.5"></ellipse>
+        </svg>
+      </div>
+      <div class="d-none d-lg-flex position-absolute start-0 bottom-0 ms-n4">
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom" class="aos-init aos-animate">  
+          <svg class="text-primary" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="58.5" cy="58.5" r="58.5"></circle>
+          </svg>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom" class="aos-init aos-animate">
+          <svg class="text-warning" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="position-relative z-3 text-center py-5 my-xl-3 mx-auto" style="max-width: 565px;" data-bs-theme="dark">
+        <h2 class="display-5 text-white">Suscribete para información de los destinos</h2>
+        <p class="text-body fs-lg pb-3 mb-3 mb-lg-4">Todo lo que necesitas para estar actualizado en tu viaje..</p>
+        <form class="subscription-form validate mx-auto" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" style="max-width: 500px;">
+          <div class="input-group"><span class="input-group-text"><i class="ai-mail"></i></span>
+            <input class="form-control" type="email" name="EMAIL" placeholder="Introduzca el email" required="" id="subscr-email">
+            <button class="btn btn-primary" type="submit" name="subscribe">Suscribete*</button>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+          </div>
+          <div class="subscription-status mx-auto"></div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="align-items-center justify-content-center d-flex">
+      <p><a class="btn btn-success btn-sm" href="#">Volver Arriba</a></p>
+    </div>
+    
+  </section>
+
+
+
+
+
+  <footer class="footer py-4">
+    <div class="container text-center py-3"><span class="text-body-secondary">© All rights reserved. Made with <span class="text-danger">🛫</span> by </span><a class="nav-link d-inline fw-normal p-0" href="https://github.com/SergiFlorensa" target="_blank" rel="noopener">Sergi Florensa</a></div>
+  </footer>
+
+
+
 
   <script src="./JS/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

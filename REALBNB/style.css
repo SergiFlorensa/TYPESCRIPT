@@ -11967,17 +11967,17 @@ textarea.form-control-lg {
 }
 @media (min-width: 400px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    background-color: rgb(52, 48, 48);
+    background-color: rgba(147, 171, 50, 0.7);
   }
 }
 @media (min-width: 400px) and (min-width: 768px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    background-color: rgb(52, 48, 48);
+    background-color: rgba(147, 171, 50, 0.7);
   }
 }
 @media (min-width: 400px) and (min-width: 768px) and (min-width: 992px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    background-color: rgb(52, 48, 48);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .header-btns .btn {
     margin-right: 10px;

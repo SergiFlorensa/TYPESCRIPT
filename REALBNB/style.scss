@@ -10,9 +10,14 @@
 
         
     }
-    
+    .custom-navbar-collapse {
+        background-color: rgb(107, 129, 114); /* Color de fondo oscuro transparente */
+      }
+      .custom-navbar-collapse .navbar-nav .nav-link {
+        color: white; /* Color blanco para los elementos del menú */
+      }
       
-    
+      
     
 
  @media (min-width: 768px) {

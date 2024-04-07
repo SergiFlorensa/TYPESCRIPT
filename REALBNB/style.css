@@ -11969,6 +11969,12 @@ textarea.form-control-lg {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     background-color: rgba(147, 171, 50, 0.7);
   }
+  .custom-navbar-collapse {
+    background-color: rgb(107, 129, 114); /* Color de fondo oscuro transparente */
+  }
+  .custom-navbar-collapse .navbar-nav .nav-link {
+    color: white; /* Color blanco para los elementos del menú */
+  }
 }
 @media (min-width: 400px) and (min-width: 768px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {

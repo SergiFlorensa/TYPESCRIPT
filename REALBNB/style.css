@@ -11988,4 +11988,10 @@ textarea.form-control-lg {
   .header-btns .btn {
     margin-right: 10px;
   }
+  .custom-navbar-collapse {
+    background-color: transparent; /* Color de fondo transparente en pantallas grandes */
+  }
+  .custom-navbar-collapse .navbar-nav .nav-link {
+    color: black; /* Color blanco para los elementos del menú */
+  }
 }/*# sourceMappingURL=style.css.map */
